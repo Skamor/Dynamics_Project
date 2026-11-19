@@ -16,7 +16,7 @@ def generate_template(temp, attempt):
     return output
 
 with open("output.md", "w") as out:
-    out.write("|mass (kg)|experimental (m)|theoretical (m)|error deviation (\%)|\n")
+    out.write("|mass (kg)|experimental height (m)|theoretical height (m)|error deviation (\%)|\n")
     out.write("|---|---|---|---|\n")
     for attempt in table:
         out.write(generate_template(temp, attempt) + "\n")
