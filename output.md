@@ -1,4 +1,4 @@
-|mass (kg)|experimental (m)|theoretical (m)|error deviation (\%)|
+|mass (kg)|experimental height (m)|theoretical height (m)|error deviation (\%)|
 |---|---|---|---|
 |0.011|0.221|0.205|7.952|
 |0.022|0.211|0.204|3.201|
