@@ -1,6 +1,6 @@
 from math import sin, cos, radians, sqrt
 
-ANGLE = 80 # in degrees
+ANGLE = 75 # in degrees
 LENGHT = 0.2286 # 9 inches in metres
 GRAVITY = 9.81
 SPRING_CONSTANT = 1225.89 # 7 pounds/inch in N/m
@@ -69,9 +69,10 @@ def create_table(theory):
     for i in range(len(theory)):
         table.append([])
     for i in range(len(lines)):
+        table[i].append(float(lines[i][1]))
         table[i].append(float(lines[i][0]))
-        table[i].append(theory[i])
-        table[i].append(abs(float(lines[i][0])-theory[i])/theory[i]*100)
+        table[i].append(round(theory[i], 3))
+        table[i].append(round(abs(float(lines[i][0])-theory[i])/theory[i]*100, 3))
     return table
 
 
